@@ -6,5 +6,7 @@
  * Email: trantrongthang1207@gmail.com
  * Skype: trantrongthang1207
 */
-
+$product = $block->getProduct();
 echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('delivery_info')->toHtml();
+?>
+<h1 style="color: #ff5501"><?php echo $product->getData('custom_tab'); ?></h1>
